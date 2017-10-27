@@ -35,15 +35,21 @@ public class challenge1222 extends HttpServlet {
    void mix(int num1,int num2,String answer,PrintWriter pw){
      int kakeru = num1*num2; 
      pw.println("１回目の結果は"+kakeru+"です！");
-   switch(answer){
-       case "true":
+       if(answer==true){
            int kakezan = kakeru*kakeru;
-           pw.println("2回目の結果は"+kakezan+"です！");
-           break;
-       case "false":
+           pw.println("2回目の結果は"+(kakeru*kakeru)+"です！");
+       }else if(answer==false){
            pw.println("終了します");
-           break;
-     } 
+       }
+//   switch(answer){
+//       case "true":
+//           int kakezan = kakeru*kakeru;
+//           pw.println("2回目の結果は"+kakezan+"です！");
+//           break;
+//       case "false":
+//           pw.println("終了します");
+//           break;
+//     } 
     }
    
    void mix(PrintWriter pw){

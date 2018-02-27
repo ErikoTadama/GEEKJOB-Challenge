@@ -9,22 +9,21 @@ package org.mypackage.sample;
  *
  * @author eriko
  */
-import java.util.Calendar;
-
 public class kadai1 {
-
-}
-
-class Sample {
+    //変数を宣言し，自分のメールアドレス（架空のものでも構いません）をその値としてください。
+    //その後，String クラスのメソッドを利用して，メールアドレスの「@」以降の文字数を画面に表示してください。
 
     public static void main(String[] args) {
+        String ad = "erikotadamaerikotadama@gmail.com";
 
-        // カレンダーインスタンスの作成
-        Calendar c = Calendar.getInstance();
+        
+        
+        //取得した文字を変数ad2とする
+        String ad2 = ad.substring(22);
+        //変数ad2の文字数を調べる
+        System.out.println(ad2.length());
 
-        c.set(2016, 0, 1, 0, 0, 0);
-
-        System.out.print(c.getTime());
-
+        
     }
+
 }

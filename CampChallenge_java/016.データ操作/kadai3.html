@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+
+        <h1><i>アンケート</i></h1><br>
+        <h2>アンケートへのご協力をよろしくお願いいたします。</h2>
+
+
+        <form action="servlet1" method="get"> 
+            <p>氏名<br>
+                <input type="text" name="txtName">
+
+            <p>・好きなスポーツを選択してください<br>
+                <select>
+                    <option name = "cmblist" value="0">野球</option>
+                    <option name = "cmblist" value="1">サッカー</option>
+                    <option name = "cmblist" value="2">テニス</option>
+                    <option name = "cmblist" value="3">特になし</option>
+                </select><br><br>
+            <p>・選択してください。<br>
+                <label>
+                    <input type ="checkbox" name="chkname">これからも運動を続けたい。</label><br>
+                <label>
+                    <input type ="checkbox" name ="chkname">運動なんか嫌いだ。</label><br><br>
+            <p>・感想を自由に記入してください。<br>
+                <textarea name="mulText"></textarea><br><br>
+
+            
+
+
+            <input type="submit" name="btnSubmit"><br><br><br>
+            <p><strong>ありがとうございました！！！</strong></p><br>
+        </form>
+
+
+
+
+
+
+
+    </body>
+</html>
